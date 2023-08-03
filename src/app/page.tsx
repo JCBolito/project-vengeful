@@ -34,40 +34,8 @@ export default function Home() {
   console.log(formData);
   return (
     <main className="flex h-screen items-center justify-center">
-      <section className="w-full max-w-sm">
-        <form onSubmit={handleSend} className="grid gap-4">
-          <h1 className="text-center text-xl font-bold">Project Vengeful</h1>
-          <Label>
-            Subject
-            <Input
-              type="text"
-              name="subject"
-              onChange={handleFormChange}
-              value={formData.subject}
-              required
-            />
-          </Label>
-          <Label>
-            Enter an email address to send an email to
-            <Input
-              type="email"
-              name="email"
-              onChange={handleFormChange}
-              value={formData.email}
-              required
-            />
-          </Label>
-          <Label>
-            Enter your message
-            <Textarea
-              name="message"
-              onChange={handleFormChange}
-              required
-              value={formData.message}
-            />
-          </Label>
-          <Button>Send</Button>
-        </form>
+      <section className="w-full max-w-sm p-4">
+        <h1 className="text-center text-xl font-bold">Project Vengeful</h1>
       </section>
     </main>
   );

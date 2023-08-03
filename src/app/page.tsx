@@ -35,8 +35,8 @@ export default function Home() {
   return (
     <main className="flex h-screen items-center justify-center">
       <section className="w-full max-w-sm">
-        <form onSubmit={handleSend} className="grid gap-4">
-          <h1 className="text-center text-xl font-bold">Project Vengeful</h1>
+        <form onSubmit={handleSend} className="grid gap-4 p-4">
+          <h1 className="text-center text-xl font-bold">Project: Vengeful</h1>
           <Label>
             Subject
             <Input
